@@ -1,0 +1,7 @@
+<!--<resources>-->
+<!--    <string name="app_name">BenaughtyProject</string>-->
+<!--</resources>-->
+<resources>
+<string name="app_name">Benaughty</string>
+<string name="image_chooser">File Chooser</string>
+</resources>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluegreen"
+    tools:context=".SignUpActivity">
+
+
+    <EditText
+        android:id="@+id/firstName"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:background="@drawable/custum_design"
+        android:drawableStart="@drawable/ic_baseline_people_24"
+        android:drawableLeft="@drawable/ic_baseline_people_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="  First Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#7A7575"
+        android:textColorHint="#7A7575"
+        android:textCursorDrawable="@color/white"
+        app:boxStrokeColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.066"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357" />
+
+    <EditText
+        android:id="@+id/lastName"
+        android:layout_width="171dp"
+        android:layout_height="47dp"
+        android:background="@drawable/custum_design"
+        android:drawableStart="@drawable/ic_baseline_people_24"
+        android:drawableLeft="@drawable/ic_baseline_people_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="  Last Name"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:shadowColor="#FFFFFF"
+        android:textColor="#7A7575"
+        android:textColorHint="#7A7575"
+        android:textCursorDrawable="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.933"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.356" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="84dp"
+        android:layout_height="86dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        app:srcCompat="@drawable/logopic" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custum_design"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawableLeft="@drawable/ic_baseline_email_24"
+        android:drawablePadding="6dp"
+        android:ems="10"
+        android:hint="  Enter your E-mail"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#7A7575"
+        android:textColorHint="#7A7575"
+        android:textCursorDrawable="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custum_design"
+        android:drawableStart="@drawable/ic_baseline_home_24"
+        android:drawableLeft="@drawable/ic_baseline_home_24"
+        android:drawablePadding="5dp"
+        android:ems="10"
+        android:hint="  Enter your Address"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#7A7575"
+        android:textColorHint="#7A7575"
+        android:textCursorDrawable="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.632" />
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="281dp"
+        android:layout_height="45dp"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <Spinner
+        android:id="@+id/spinnerCity"
+        android:layout_width="281dp"
+        android:layout_height="45dp"
+        android:background="@android:drawable/btn_dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.802" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="199dp"
+        android:layout_height="45dp"
+        android:text="Sign Up"
+        android:textColor="@color/buttonColor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.117"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243" />
+
+    <EditText
+        android:id="@+id/numberid"
+        android:layout_width="361dp"
+        android:layout_height="45dp"
+        android:background="@drawable/custum_design"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="Enter you Phone number"
+        android:imeOptions="actionDone"
+
+        android:importantForAutofill="no"
+        android:inputType="number"
+        android:paddingLeft="95dp"
+        android:paddingTop="10dp"
+        android:textColor="#7A7575"
+        android:textColorHint="#7A7575"
+        android:textCursorDrawable="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/continuebtn"
+            android:layout_width="252dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:text="Continue"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:backgroundTint="@color/buttonColor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.877"
+            app:strokeColor="@color/white"
+            app:strokeWidth="1dp" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:gravity="center"
+        android:paddingTop="4dp"
+        android:text="+92-"
+        android:textColor="#7A7575"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.534" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="34dp"
+        android:layout_height="26dp"
+        android:paddingRight="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        app:srcCompat="@drawable/flag" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/purple_200</item>
+        <item name="colorAccent">@color/black</item>
+    </style>
+    <style name="customDialogTheme" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">false</item>
+    </style>
+
+    
+</resources>
