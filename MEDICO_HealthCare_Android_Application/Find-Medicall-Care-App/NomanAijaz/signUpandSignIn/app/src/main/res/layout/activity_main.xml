@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FBF9F9"
+    tools:context=".MainActivity"
+    >
+
+    <Button
+        android:id="@+id/signUp"
+        android:layout_width="287dp"
+        android:layout_height="67dp"
+        android:layout_margin="10dp"
+
+        android:drawableStart="@drawable/ic_baseline_login_24"
+        android:drawableLeft="@drawable/ic_baseline_login_24"
+        android:text="Sign Up"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#0C0C0C"
+        app:backgroundTint="#68CBD8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.728" />
+
+    <Button
+        android:id="@+id/signIn"
+        android:layout_width="286dp"
+        android:layout_height="69dp"
+        android:text="Sign In"
+        android:textColor="#0C0C0C"
+        app:backgroundTint="#67C7D3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.598"
+
+        />
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="194dp"
+        android:layout_height="229dp"
+        android:src="@drawable/logopic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.149"
+        app:strokeColor="@color/white"
+        app:strokeWidth="5dp"
+        tools:ignore="MissingConstraints"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

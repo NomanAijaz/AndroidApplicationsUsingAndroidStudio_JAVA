@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/AdminScreenBackGroud"
+    android:orientation="vertical"
+    tools:context=".Admin_GetHopitalDataForm">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="277dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Register Hopital"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/logo" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFE500">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_HopitalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hopital Name"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFE500" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFE500">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_HospitalNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hopital Contact Number"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#CDDC39"
+                android:textColorHint="#FFE500" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#FFE500">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_HopitalEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hopital Email"
+                android:textColor="#FFFFFF"
+                android:textColorHighlight="#FFFFFF"
+                android:textColorHint="#FFE500" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_HopitalPhyAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hopital Physical Address"
+            android:textColorHint="#FFE500">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="hint"
+                android:textColor="#FFFFFF" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColorHint="#FDE300"
+            app:suffixTextColor="#FFE500">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txt_HopitalDesc"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:hint="Desrciption"
+                android:textColor="#F8F8F8"
+                android:textColorHint="#FFE500" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="206dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:orientation="vertical">
+
+            <HorizontalScrollView
+                android:id="@+id/catagoriesListHorizpntal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/horizanotal_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </HorizontalScrollView>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRemovCatagory"
+                android:layout_width="20dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/registeration_form_btn_design"
+                android:onClick="addCatCall"
+                android:text="Add Departments"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnCreateDepartnent"
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/registeration_form_btn_design"
+                android:onClick="createCatagorycall"
+                android:text="Create Department"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/btnHopialSelectCity"
+                android:layout_width="15dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/registeration_form_btn_design"
+                android:onClick="SelectCityCall"
+                android:text="Selecy City"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="15dp" />
+
+        <LinearLayout
+            android:layout_width="238dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btnRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:background="@drawable/registeration_form_btn_design"
+                android:onClick="StartRegisterProcess"
+                android:text="Register" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
